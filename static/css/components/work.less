@@ -257,6 +257,44 @@ div.editionTools {
   display: block;
 }
 
+@media only screen and (max-width: 768px) {
+  .workDetails{
+    display: flex;
+    flex-direction: column;
+
+    .editionAbout{
+      display: flex;
+      flex-direction: column;  
+    }  
+   
+    .editionAbout.editionAll{
+      order:1;
+    }
+    .editionAbout.work-line{
+      order:2;
+    }
+    .editionAbout.work-title{
+      order:3;
+    }
+    .editionAbout.edition-byline{
+      order:4;
+    }
+    .editionAbout.readers-stats{
+      order:5;
+    }
+    .editionCover{
+      order:6;
+    }
+    
+  }  
+  
+  
+
+ 
+
+
+}
+
 @media only screen and (min-width: @width-breakpoint-tablet) {
   .mobile-borrow-cta {
     display: none;
