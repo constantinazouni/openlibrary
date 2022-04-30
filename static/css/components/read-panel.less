@@ -4,7 +4,9 @@
  */
 
 // .Tools .btn-notice is a legacy selector. Remove at earliest opportunity.
-
+.book-header-mobile{
+  display: none;
+}
 .waitinglist-message {
   white-space: nowrap;
   margin: 0 0 10px;
@@ -115,6 +117,12 @@
 .Tools .booklinks li {
   list-style: none;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 959px){
+  .book-header-mobile{
+    display: block;
+  }
 }
 
 // For the button at the top
